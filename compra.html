@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase Final de Compra - Tienda de Cómics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ATENEO COMICS ORIHUELA</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="compra.html">COMPRA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="final-compra">
+        <h2 style="text-align: center;">Fase Final de Compra</h2>
+
+        <div class="compra-container">
+            <!-- Resumen del pedido -->
+            <div class="resumen-pedido">
+                <h3 style="text-align: center;">Resumen de Productos</h3>
+                <div class="producto">
+                    <img src="./images/comic1.jfif" alt="Comic 1" title="Superman vol.1">
+                    <h3>Superman vol.1</h3>
+                    <p>9.99 €</p>
+                    <button title="Añadir al carrito">Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="./images/comic2.jfif" alt="Comic 2" title="Batman vs Bane">
+                    <h3>Batman vs Bane</h3>
+                    <p>11.99 €</p>
+                    <button title="Añadir al carrito">Añadir al carrito</button>
+                </div>
+                <br>
+                <p><strong>TOTAL: 23.98 €</strong></p>
+            </div>
+
+            <!-- Formulario de envío y pago -->
+            <div class="formulario-compra">
+                <h3 style="text-align: center;"> Información de Envío</h3>
+                <form action="#" method="POST">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="direccion">Dirección de Envío:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+
+                    <label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required>
+
+                    <h3 style="text-align: center;">Método de Pago</h3>
+                    <label for="numero-tarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+
+                    <label for="fecha-expiracion">Fecha de Expiración:</label>
+                    <input type="text" id="fecha-expiracion" name="fecha-expiracion" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                    <button type="submit" title="CONFIRMAR COMPRA">CONFIRMAR COMPRA</button>
+                </form>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ATENEO COMICS ORIHUELA.</p>
+    </footer>
+</body>
+</html>
