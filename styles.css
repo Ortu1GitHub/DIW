@@ -102,19 +102,30 @@ footer {
     color: gray;
 }
 
-.tooltip {
-    visibility: hidden; /* Oculta el tooltip por defecto */
-    width: 150px; /* Ancho del tooltip */
-    background-color: #333; /* Color de fondo del tooltip */
-    color: #fff; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    position: absolute; /* Posiciona el tooltip respecto al producto */
-    z-index: 1; /* Asegura que el tooltip esté por encima de otros elementos */
-    bottom: 125%; /* Coloca el tooltip arriba del elemento */
-    left: 50%; /* Centra horizontalmente */
-    margin-left: -75px; /* Compensa el ancho para centrarlo */
-    opacity: 0; /* Hace que el tooltip sea invisible */
-    transition: opacity 0.3s; /* Transición suave para la aparición */
+/* padding del texto de la seccion sobre-nosotros */
+#sobre-nosotros{
+    padding-left: 50px;
+}
+
+/* padding del formulario de contacto */
+#contacto{
+    padding-left: 50px;
+}
+
+/* padding del formulario de compra */
+#formulario{
+    padding-left: 50px;
+}
+
+#boton_enviar{
+    margin-left:  20px;
+}
+
+/* Margins de los botones para separarlos del texto */
+#boton_confirmar{
+    margin-left:  20px;
+}
+
+#total {
+    padding-left: 50px;
 }

@@ -40,13 +40,13 @@
                     <button title="Añadir al carrito">Añadir al carrito</button>
                 </div>
                 <br>
-                <p><strong>TOTAL: 23.98 €</strong></p>
+                <p id="total" ><strong>TOTAL: 23.98 €</strong></p>
             </div>
 
             <!-- Formulario de envío y pago -->
             <div class="formulario-compra">
                 <h3 style="text-align: center;"> Información de Envío</h3>
-                <form action="#" method="POST">
+                <form id="formulario" action="#" method="POST">
                     <label for="nombre">Nombre Completo:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
@@ -68,7 +68,7 @@
 
                     <label for="cvv">CVV:</label>
                     <input type="text" id="cvv" name="cvv" required>
-                    <button type="submit" title="CONFIRMAR COMPRA">CONFIRMAR COMPRA</button>
+                    <button id="boton_confirmar" type="submit" title="CONFIRMAR COMPRA">CONFIRMAR COMPRA</button>
                 </form>
             </div>
         </div>
