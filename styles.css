@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:#333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#banner {
+    text-align: center;
+    padding: 4rem;
+    background-color: #333;
+    color: white;
+}
+
+#banner h2 {
+    font-size: 2.5rem;
+}
+
+#productos-destacados {
+    padding: 2rem;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.producto {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #333;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    /* Transición suave para transformación y filtro */
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.producto img:hover {
+    /* Agranda la imagen ligeramente */
+    transform: scale(1.1); 
+    /* Incrementa el brillo */
+    filter: brightness(1.2); 
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    /* Color de fondo al pasar el ratón */
+    background-color: #555; 
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: gray;
+}
+
+/* padding del texto de la seccion sobre-nosotros */
+#sobre-nosotros{
+    padding-left: 50px;
+}
+
+/* padding del formulario de contacto */
+#contacto{
+    padding-left: 50px;
+}
+
+/* padding del formulario de compra */
+#formulario{
+    padding-left: 50px;
+}
+
+#boton_enviar{
+    margin-left:  20px;
+}
+
+/* Margins de los botones para separarlos del texto */
+#boton_confirmar{
+    margin-left:  20px;
+}
+
+#total {
+    padding-left: 50px;
+}
