@@ -130,3 +130,61 @@ footer {
 #total {
     padding-left: 50px;
 }
+
+/* MEDIA QUERIES */
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    #banner h2 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .productos-grid {
+        /* Una columna en lugar de varias */
+        grid-template-columns: 1fr; 
+    }
+
+    #sobre-nosotros, #contacto, #formulario, #total {
+        padding-left: 20px;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 900px) {
+    #banner h2 {
+        font-size: 2rem;
+    }
+
+    .productos-grid {
+        /* Dos columnas en tabletas */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 901px) {
+    .productos-grid {
+        /* No se indica un número de columnas */
+    }
+
+    #banner h2 {
+        font-size: 2.5rem;
+    }
+}
