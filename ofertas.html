@@ -24,37 +24,37 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>ATENEO COMICS ORIHUELA</h1>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ATENEO COMICS ORIHUELA</h1>
             <ul class="flex space-x-4">
-                <li><a href="index.html" class="hover:underline text-white-500">Home</a></li>
-                <li><a href="productos.html" class="hover:underline text-white-500">Productos</a></li>
-                <li><a href="sobre-nosotros.html" class="hover:underline text-white-500">Sobre Nosotros</a></li>
-                <li><a href="contacto.html" class="hover:underline text-white-500">Contacto</a></li>
-                <li><a href="compra.html" class="hover:underline text-white-500">COMPRA</a></li>
-                <li><a href="top-vendidos.html" class="hover:underline text-white-500">Top sales</a></li>
-                <li><a href="ofertas.html" class="hover:underline text-white-500">Ofertas</a></li>
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="productos.html" class="hover:underline">Productos</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                <li><a href="compra.html" class="hover:underline">COMPRA</a></li>
+                <li><a href="top-vendidos.html" class="hover:underline">Top sales</a></li>
+                <li><a href="ofertas.html" class="hover:underline">Ofertas</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container mx-auto my-8">
-        <h2 class="text-2xl font-bold text-center mb-6">¡¡¡ Ofertas Especiales !!!</h2>
+    <main class="container mx-auto my-8 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">¡¡¡ Ofertas Especiales !!!</h2>
         
         <!-- Banner de Oferta con texto en movimiento horizontal -->
         <div class="bg-green-500 text-white text-center py-4 mb-8">
             <div class="scrolling-text">
-                <h3 class="text-xl font-bold">¡Oferta Especial! 20% de descuento en todos los cómics seleccionados.</h3>
-                <p class="mt-2">Aprovecha nuestras increíbles promociones, solo por tiempo limitado.</p>
+                <h3 class="text-xl md:text-2xl font-bold">¡Oferta Especial! 20% de descuento en todos los cómics seleccionados.</h3>
+                <p class="mt-2 text-sm md:text-lg">Aprovecha nuestras increíbles promociones, solo por tiempo limitado.</p>
             </div>
         </div>
 
         <!-- Grid con un comic por fila -->
-        <div class="grid grid-cols-1 gap-6">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <!-- Comic 1 -->
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-auto">
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img src="images/comic1.JFIF" alt="Comic 1" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -65,7 +65,7 @@
                         <p class="text-gray-600">Autor: Autor 1</p>
                     </div>
                     <!-- Sinopsis -->
-                    <p class="text-gray-600 mt-2">Sinopsis: En este volumen, Superman enfrenta a uno de sus mayores desafíos mientras lucha por salvar a la humanidad de una amenaza galáctica. A través de varias pruebas y sacrificios, Superman deberá confrontar su destino como el último hijo de Krypton.</p>
+                    <p class="text-gray-600 mt-2 text-sm md:text-base">Sinopsis: En este volumen, Superman enfrenta a uno de sus mayores desafíos mientras lucha por salvar a la humanidad de una amenaza galáctica. A través de varias pruebas y sacrificios, Superman deberá confrontar su destino como el último hijo de Krypton.</p>
                     <!-- Botón de compra con enlace a compra.html -->
                     <a href="compra.html">
                         <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Superman vol.1">Comprar</button>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Comic 2 -->
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-auto">
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img src="images/comic3.JFIF" alt="Comic 3" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -85,7 +85,7 @@
                         <p class="text-gray-600">Autor: Autor 2</p>
                     </div>
                     <!-- Sinopsis -->
-                    <p class="text-gray-600 mt-2">Sinopsis: Lobezno se enfrenta a una serie de enemigos mientras explora los oscuros secretos de su pasado, en un combate épico por su supervivencia. En este volumen, Wolverine tendrá que hacer frente a viejos amigos convertidos en enemigos y descubrir un traidor dentro de sus filas.</p>
+                    <p class="text-gray-600 mt-2 text-sm md:text-base">Sinopsis: Lobezno se enfrenta a una serie de enemigos mientras explora los oscuros secretos de su pasado, en un combate épico por su supervivencia. En este volumen, Wolverine tendrá que hacer frente a viejos amigos convertidos en enemigos y descubrir un traidor dentro de sus filas.</p>
                     <!-- Botón de compra con enlace a compra.html -->
                     <a href="compra.html">
                         <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Lobezno vol. 2">Comprar</button>

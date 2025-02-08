@@ -7,27 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>ATENEO COMICS ORIHUELA</h1>
+<body class="bg-gray-100">
+
+    <header class="bg-black-900 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">ATENEO COMICS ORIHUELA</h1>
             <ul class="flex space-x-4">
-                <li><a href="index.html" class="hover:underline text-white-500">Home</a></li>
-                <li><a href="productos.html" class="hover:underline text-white-500">Productos</a></li>
-                <li><a href="sobre-nosotros.html" class="hover:underline text-white-500">Sobre Nosotros</a></li>
-                <li><a href="contacto.html" class="hover:underline text-white-500">Contacto</a></li>
-                <li><a href="compra.html" class="hover:underline text-white-500">COMPRA</a></li>
-                <li><a href="top-vendidos.html" class="hover:underline text-white-500">Top sales</a></li>
-                <li><a href="ofertas.html" class="hover:underline text-white-500">Ofertas</a></li>
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="productos.html" class="hover:underline">Productos</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                <li><a href="compra.html" class="hover:underline">COMPRA</a></li>
+                <li><a href="top-vendidos.html" class="hover:underline">Top sales</a></li>
+                <li><a href="ofertas.html" class="hover:underline">Ofertas</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container mx-auto my-8">
+    <main class="container mx-auto my-8 px-4">
         <h2 class="text-2xl font-bold text-center mb-6">Top Más Vendidos</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Fila 1 -->
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Superman vol.1">
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic1.JFIF" alt="Comic 1" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -36,13 +37,13 @@
                     </div>
                     <div class="flex justify-between items-center mt-1">
                         <p class="text-gray-600">Autor: Autor 1</p>
-                        <!-- Se indica el número de ventas de cada comic -->
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 250</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Superman vol.1">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Lobezno vol. 2">
+
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic3.JFIF" alt="Comic 3" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -53,10 +54,11 @@
                         <p class="text-gray-600">Autor: Autor 2</p>
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 180</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Lobezno vol. 2">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Silver surfer">
+
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic5.JFIF" alt="Comic 5" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -67,11 +69,12 @@
                         <p class="text-gray-600">Autor: Autor 3</p>
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 300</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Silver surfer">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
+
             <!-- Fila 2 -->
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Batman vs Bane">
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic2.JFIF" alt="Comic 2" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -82,10 +85,11 @@
                         <p class="text-gray-600">Autor: Autor 4</p>
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 220</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Batman vs Bane">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Avengers 34">
+
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic4.JFIF" alt="Comic 4" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -96,10 +100,11 @@
                         <p class="text-gray-600">Autor: Autor 5</p>
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 210</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Avengers 34">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
-            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80" title="Spiderman">
+
+            <div class="producto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-80">
                 <img src="images/comic6.JFIF" alt="Comic 6" class="w-full h-56 object-contain">
                 <div class="p-4">
                     <div class="flex justify-between items-center">
@@ -110,7 +115,7 @@
                         <p class="text-gray-600">Autor: Autor 6</p>
                         <div class="bg-yellow-200 text-black text-sm px-2 py-1 rounded-full">Ventas: 200</div>
                     </div>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" title="Spiderman">Comprar</button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar</button>
                 </div>
             </div>
         </div>
@@ -119,5 +124,6 @@
     <footer class="bg-gray-800 text-white text-center py-4 mt-8">
         <p>&copy; 2025 Ateneo Comics Orihuela. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
