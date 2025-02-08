@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fase Final de Compra - Tienda de Cómics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <h1>ATENEO COMICS ORIHUELA</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="compra.html">COMPRA</a></li>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline text-white-500">Home</a></li>
+                <li><a href="productos.html" class="hover:underline text-white-500">Productos</a></li>
+                <li><a href="sobre-nosotros.html" class="hover:underline text-white-500">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="hover:underline text-white-500">Contacto</a></li>
+                <li><a href="compra.html" class="hover:underline text-white-500">COMPRA</a></li>
+                <li><a href="top-vendidos.html" class="hover:underline text-white-500">Top sales</a></li>
+                <li><a href="ofertas.html" class="hover:underline text-white-500">Ofertas</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="final-compra">
-        <h2 style="text-align: center;">Fase Final de Compra</h2>
+        <h2>Fase Final de Compra</h2>
 
         <div class="compra-container">
             <!-- Resumen del pedido -->
@@ -40,12 +43,12 @@
                     <button title="Añadir al carrito">Añadir al carrito</button>
                 </div>
                 <br>
-                <p id="total" ><strong>TOTAL: 23.98 €</strong></p>
+                <p id="total"><strong>TOTAL: 23.98 €</strong></p>
             </div>
 
             <!-- Formulario de envío y pago -->
             <div class="formulario-compra">
-                <h3 style="text-align: center;"> Información de Envío</h3>
+                <h3 style="text-align: center;" id="info_envio"> Información de Envío</h3>
                 <form id="formulario" action="#" method="POST">
                     <label for="nombre">Nombre Completo:</label>
                     <input type="text" id="nombre" name="nombre" required>
